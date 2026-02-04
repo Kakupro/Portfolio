@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ThreeBackground from "@/components/ThreeBackground";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Arpit Kumar Singh | Portfolio",
@@ -13,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="antialiased">
+        <ThreeBackground />
+        <Navbar />
         {children}
       </body>
     </html>

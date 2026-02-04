@@ -28,8 +28,8 @@ function ParticleField(props: any) {
       positions[i * 3 + 1] = y;
       positions[i * 3 + 2] = z;
 
-      // Color gradient from cyan to blue
-      color.setHSL(0.5 + Math.random() * 0.2, 0.8, 0.6);
+      // Color gradient: White to Silver (Monochrome)
+      color.setHSL(0, 0, 0.5 + Math.random() * 0.5);
       colors[i * 3] = color.r;
       colors[i * 3 + 1] = color.g;
       colors[i * 3 + 2] = color.b;
@@ -63,7 +63,7 @@ function ParticleField(props: any) {
 function FloatingGrid() {
   return (
     <group rotation={[Math.PI / 2, 0, 0]} position={[0, -2, 0]}>
-      <gridHelper args={[20, 20, 0x00f0ff, 0x111111]} />
+      <gridHelper args={[20, 20, 0x444444, 0x222222]} />
     </group>
   );
 }

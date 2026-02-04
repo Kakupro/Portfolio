@@ -41,15 +41,15 @@ export default function Hero() {
                         </motion.div>
 
                         <div className="flex gap-4 mt-8">
-                            <div className="h-12 w-12 rounded-full border-2 border-black flex items-center justify-center hover:bg-[#ffb800] transition-colors cursor-pointer">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="h-12 w-12 rounded-full border-2 border-black flex items-center justify-center hover:bg-[#ffb800] transition-colors cursor-pointer text-black">
                                 <Instagram size={20} />
-                            </div>
-                            <div className="h-12 w-12 rounded-full border-2 border-black flex items-center justify-center hover:bg-[#ffb800] transition-colors cursor-pointer">
+                            </a>
+                            <a href="https://www.linkedin.com/in/arpit-kumar-singh-239600325/" target="_blank" rel="noopener noreferrer" className="h-12 w-12 rounded-full border-2 border-black flex items-center justify-center hover:bg-[#ffb800] transition-colors cursor-pointer text-black">
                                 <Linkedin size={20} />
-                            </div>
-                            <div className="h-12 w-12 rounded-full border-2 border-black flex items-center justify-center hover:bg-[#ffb800] transition-colors cursor-pointer">
+                            </a>
+                            <a href="https://github.com/arpits0017" target="_blank" rel="noopener noreferrer" className="h-12 w-12 rounded-full border-2 border-black flex items-center justify-center hover:bg-[#ffb800] transition-colors cursor-pointer text-black">
                                 <Github size={20} />
-                            </div>
+                            </a>
                         </div>
                     </div>
 

@@ -118,21 +118,26 @@ export default function Hero() {
                                 <div className="space-y-4">
                                     <div>
                                         <p className="font-bold text-lg">B.Tech Engineering</p>
-                                        <p className="text-sm text-gray-600">2021 - 2025</p>
-                                        <p className="text-xs text-gray-500">Global Institute of Technology</p>
+                                        <p className="text-sm text-gray-600">2024 - 2028</p>
+                                        <p className="text-xs text-gray-500">Vivekananda Institute of Professional Studies</p>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Software Skills */}
                             <div>
-                                <h3 className="text-xl font-bold border-b-2 border-black pb-2 mb-4">Software Skill</h3>
-                                <div className="flex flex-wrap gap-2">
-                                    {['Ps', 'Ai', 'Pr', 'Lr', 'Xd', 'Id'].map((tech) => (
-                                        <span key={tech} className="w-10 h-10 flex items-center justify-center bg-black text-white font-bold rounded-lg hover:bg-[#ffb800] hover:text-black transition-colors cursor-default">
-                                            {tech}
-                                        </span>
-                                    ))}
+                                <div className="overflow-hidden border-2 border-black rounded-xl bg-black py-2">
+                                    <div className="flex animate-marquee whitespace-nowrap">
+                                        {[...Array(2)].map((_, i) => (
+                                            <div key={i} className="flex gap-4 mx-4">
+                                                {['PHOTOSHOP', 'ILLUSTRATOR', 'PREMIERE PRO', 'LIGHTROOM', 'ZBRUSH', 'AFTER EFFECTS', 'FIGMA', 'BLENDER'].map((tech) => (
+                                                    <span key={tech} className="text-[#ffb800] font-black text-xl italic mx-4 uppercase">
+                                                        {tech}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +201,7 @@ export default function Hero() {
                         <div className="space-y-6 text-lg font-medium">
                             <ContactRow icon={<Mail />} label="arpitkumar@example.com" />
                             <ContactRow icon={<Phone />} label="+91 98765 43210" />
-                            <ContactRow icon={<MapPin />} label="West Bengal, India" />
+                            <ContactRow icon={<MapPin />} label="Delhi, India" />
                         </div>
 
                         <Link href="mailto:arpitkumar@example.com" className="inline-block px-8 py-4 bg-black text-white font-bold text-xl rounded-lg hover:bg-[#ffb800] hover:text-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all transform hover:-translate-y-1 border-2 border-transparent hover:border-black">

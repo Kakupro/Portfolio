@@ -34,9 +34,8 @@ export default function Hero() {
                             <span className="bg-[#ffb800] px-4 py-1 text-xs font-bold border border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] inline-block mb-4 transform -rotate-2">
                                 CREATIVE VISUAL
                             </span>
-                            <h1 className="text-7xl md:text-9xl font-extrabold leading-[0.85] tracking-tighter uppercase font-display">
-                                PORTO <br />
-                                <span className="text-[#333]">FOLIO.</span>
+                            <h1 className="text-6xl md:text-8xl lg:text-9xl font-extrabold leading-none tracking-tighter uppercase font-display">
+                                PORTFOLIO.
                             </h1>
                         </motion.div>
 
